@@ -1,0 +1,579 @@
+Started GET "/" for 127.0.0.1 at 2018-08-09 15:44:54 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (7.3ms)
+Completed 200 OK in 49ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 15:45:39 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.3ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 15:49:19 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (7.4ms)
+Completed 200 OK in 25ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 16:06:03 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (3.8ms)
+Completed 200 OK in 40ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/charges" for 127.0.0.1 at 2018-08-09 16:10:33 +0200
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mmgFKFEc7xQXF3h/DnC4yjUBamKgL9jBdX2GKehDBpSt3wAelK9hcTel//4rd5V42gWa8iKks1TCxknxUMguTA==", "stripeToken"=>"tok_1CxEqQDf1WyMu7lkSX0hcfKv", "stripeTokenType"=>"card", "stripeEmail"=>"diane-bunod-92@hotmail.fr"}
+  Rendering charges/create.html.erb within layouts/charges
+  Rendered charges/create.html.erb within layouts/charges (0.6ms)
+Completed 200 OK in 3793ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/charges" for 127.0.0.1 at 2018-08-09 16:12:06 +0200
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mmgFKFEc7xQXF3h/DnC4yjUBamKgL9jBdX2GKehDBpSt3wAelK9hcTel//4rd5V42gWa8iKks1TCxknxUMguTA==", "stripeToken"=>"tok_1CxEqQDf1WyMu7lkSX0hcfKv", "stripeTokenType"=>"card", "stripeEmail"=>"diane-bunod-92@hotmail.fr"}
+Completed 500 Internal Server Error in 1078ms (ActiveRecord: 0.0ms)
+
+
+  
+Stripe::InvalidRequestError (You cannot use a Stripe token more than once: tok_1CxEqQDf1WyMu7lkSX0hcfKv.):
+  
+app/controllers/charges_controller.rb:10:in `create'
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 16:20:29 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (3.6ms)
+Completed 200 OK in 38ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 16:20:35 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 17ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 16:21:08 +0200
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-08-09 16:21:24 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2280ms (Views: 2269.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 16:23:10 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 16:23:26 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 16:23:27 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.1ms)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 16:23:27 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (0.8ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:12:19 +0200
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20180809165337)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180809165337_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180809165337"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-09 21:12:36.919875"], ["updated_at", "2018-08-09 21:12:36.919875"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:12:43 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 608ms (Views: 590.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 23:12:52 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (2.5ms)
+Completed 200 OK in 48ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/charges/new" for 127.0.0.1 at 2018-08-09 23:12:52 +0200
+Processing by ChargesController#new as HTML
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.0ms)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/charges" for 127.0.0.1 at 2018-08-09 23:13:48 +0200
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zbZMjgf/q6v4783HOO6rMoyxK3HkMEeHlpv7xSMFfu/6AUm4wkwlzthdSkYd6YaAY7Xb4Wa7LBIhIDQdm45WNw==", "stripeToken"=>"tok_1CxLS2Df1WyMu7lkX4rjAOWW", "stripeTokenType"=>"card", "stripeEmail"=>"diane-bunod@dez.com"}
+  Rendering charges/create.html.erb within layouts/charges
+  Rendered charges/create.html.erb within layouts/charges (0.7ms)
+Completed 200 OK in 3701ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:13:57 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 89ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:14:57 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hemHOczfNyf4dftBct6zSugK6nMXVbL0pP/Mt4h9XRGL2CsL6Ytqk0rknybaq1Xs3wUu3/hBI4JmGcn2lpFAmQ==", "session"=>{"name"=>"Bunod", "email"=>"Diane@dez.dez"}, "commit"=>"M'inscrire'"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:14:57.921236"], ["updated_at", "2018-08-09 21:14:57.921236"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 4.3ms)
+
+
+  
+NoMethodError (undefined method `log_in' for #<UserController:0x00007fdf67022210>):
+  
+app/controllers/user_controller.rb:9:in `create'
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:15:15 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hemHOczfNyf4dftBct6zSugK6nMXVbL0pP/Mt4h9XRGL2CsL6Ytqk0rknybaq1Xs3wUu3/hBI4JmGcn2lpFAmQ==", "session"=>{"name"=>"Bunod", "email"=>"Diane@dez.dez"}, "commit"=>"M'inscrire'"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:15:15.952830"], ["updated_at", "2018-08-09 21:15:15.952830"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:15:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:15:45 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 145ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:15:48 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lf2sLV84NNqxJK02JT75+5YAXxFngnJLXWGS44d+Nf0jzAAfemxpbgO1yVGNSx9doQ+bvYiW4z2fh5eimZIodQ==", "session"=>{"name"=>"Bunod", "email"=>"Diane@dez.dez"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:15:48.230145"], ["updated_at", "2018-08-09 21:15:48.230145"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:15:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 97ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:15:49 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 152ms (Views: 143.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:16:56 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:17:06 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y4fUAnpjQ+yaGQ0X6OXQKUmHMoKCwfmbZ1sdaUVZ7hpttngwXzceWCiIaXBAkDaPfoj2Lm3VaO2lvRgoW7Xzkg==", "session"=>{"name"=>"Diane", "email"=>"d.bunod@gmail.com"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:17:06.475760"], ["updated_at", "2018-08-09 21:17:06.475760"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:17:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:17:12 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 144ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:17:14 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W1QohYXtOU39AYSTaHZ8HjcWcxz+NH4hy6MhRXTnVxZVZYS3oLlk+U+Q4PTAA5q4ABm3sBEg71cJRSQEagtKng==", "session"=>{"name"=>"Diane", "email"=>"d.bunod@gmail.com"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:17:14.414429"], ["updated_at", "2018-08-09 21:17:14.414429"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:17:14 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:17:57 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 615ms (Views: 608.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:18:01 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 68ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:18:21 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:18:33 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:18:53 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 115ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:19:03 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wUDRkEi2jeeQWHe3oLe+LlGp8qMc6EihR70XXLBtBrrPcX2ibeLQUyLJE9AIwliIZqY2D/P82deFWxIdroEbMg==", "session"=>{"name"=>"Diane", "email"=>"de@efz.fe"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:19:03.497257"], ["updated_at", "2018-08-09 21:19:03.497257"]]
+  ↳ app/controllers/user_controller.rb:8
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:19:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 236ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:19:14 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 239ms (Views: 229.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:19:15 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:20:55 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iE0spRuSE8dublZxVf1Qs4UBEaT/9bMvnA+PV76Y6seGfICXPsZOc9z/Mhb9iLYVsg7VCBDhIlle6YoWoHT3Tw==", "session"=>{"name"=>"dez", "email"=>"dez@re.c"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-08-09 21:20:55.701255"], ["updated_at", "2018-08-09 21:20:55.701255"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 271ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:20:55 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 96ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:21:20 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 430ms (Views: 415.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:21:23 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oCFsESP6siFwJ4y/7EtSI0bEVt7E2E9FFZkUToVVjfyuEMAjBq7vlcK26NhEPrSFccuScivM3jPXfxEPm7mQdA==", "session"=>{"name"=>"dez", "email"=>"dez@re.c"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dez"], ["email", "dez@re.c"], ["created_at", "2018-08-09 21:21:23.392365"], ["updated_at", "2018-08-09 21:21:23.392365"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:21:23 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 101ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:22:56 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 353ms (Views: 347.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:22:58 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oYLLAeHAwY1NT/mauCiQDY03ReT3BswQtSXju9jjxHWvs2czxJScOf/enf0QXXarujiBSBgSXWZ3w+b6xg/Z/Q==", "session"=>{"name"=>"dez", "email"=>"dez@re.c"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dez"], ["email", "dez@re.c"], ["created_at", "2018-08-09 21:22:58.561633"], ["updated_at", "2018-08-09 21:22:58.561633"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:22:58 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 68ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:23:14 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 211ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:23:16 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3s+pu38boliOfvmprWFVufGZO55F+/z2mZ353b3qgc3Q/gWJWk//7Dzvnc4FFLMfxpb/MqrvbYBbe/ycowacRQ==", "session"=>{"name"=>"dez", "email"=>"dez@re.c"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dez"], ["email", "dez@re.c"], ["created_at", "2018-08-09 21:23:17.115235"], ["updated_at", "2018-08-09 21:23:17.115235"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 23:23:17 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-08-09 23:24:14 +0200
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 107ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:24:33 +0200
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vGRCeySKTLitdxInM0RT4ytK5Yd+QDhMo6hwPqsAJh+mp2AuYVEHkbsxaKBtLjCT1wArdjdXVGLD/GHQatig==", "session"=>{"name"=>"dez", "email"=>"d.bunod@gmail.com"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dez"], ["email", "d.bunod@gmail.com"], ["created_at", "2018-08-09 21:24:33.653634"], ["updated_at", "2018-08-09 21:24:33.653634"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 4.8ms)
+
+
+  
+Mailjet::ApiError (error 400 while sending #<RestClient::Resource:0x00007fdf64760750 @url="https://api.mailjet.com/v3.1/send", @block=nil, @options={:public_operations=>[:post], :read_only=>nil, :perform_api_call=>true, :user=>"6ce65ef95be9aaad17bddca9cb795be2", :password=>"16a525f1fe4fb3f1f7d079eacac33b1e", :content_type=>"application/json"}> to https://api.mailjet.com/v3.1/send with {"FromEmail"=>"diane-bunod-92@hotmail.fr", "FromName"=>"Diane", "Subject"=>"Hello", "Text-part"=>"Hi, how are you ?", "Recipients"=>[{"email"=>"d.bunod@gmail.com"}]}
+
+"{\"Errors\":[{\"ErrorIdentifier\":\"74dbef7e-109d-498a-be8a-cc146467c61f\",\"ErrorCode\":\"send-0001\",\"StatusCode\":400,\"ErrorMessage\":\"Not a valid property.\",\"ErrorRelatedTo\":[\"FromEmail\",\"FromName\",\"Subject\",\"Text-part\",\"Recipients\"]},{\"ErrorIdentifier\":\"a5dc10b6-4d30-4705-a266-ada75da7b110\",\"ErrorCode\":\"mj-0003\",\"StatusCode\":400,\"ErrorMessage\":\"Missing mandatory property.\",\"ErrorRelatedTo\":[\"Messages\"]}],\"Messages\":[]}"
+
+Please see https://dev.mailjet.com/guides/#status-codes for more informations on error numbers.
+
+):
+  
+app/mailers/newsletter_mailer.rb:11:in `send'
+app/controllers/user_controller.rb:10:in `create'
+Started POST "/user/new" for 127.0.0.1 at 2018-08-09 23:27:18 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/dianebunod/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8vGRCeySKTLitdxInM0RT4ytK5Yd+QDhMo6hwPqsAJh+mp2AuYVEHkbsxaKBtLjCT1wArdjdXVGLD/GHQatig==", "session"=>{"name"=>"dez", "email"=>"d.bunod@gmail.com"}, "commit"=>"M'inscrire"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dez"], ["email", "d.bunod@gmail.com"], ["created_at", "2018-08-09 21:27:19.164590"], ["updated_at", "2018-08-09 21:27:19.164590"]]
+  ↳ app/controllers/user_controller.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_controller.rb:9
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 3.9ms)
+
+
+  
+Mailjet::ApiError (error 400 while sending #<RestClient::Resource:0x00007fb79a3fa058 @url="https://api.mailjet.com/v3.1/send", @block=nil, @options={:public_operations=>[:post], :read_only=>nil, :perform_api_call=>true, :user=>"6ce65ef95be9aaad17bddca9cb795be2", :password=>"16a525f1fe4fb3f1f7d079eacac33b1e", :content_type=>"application/json"}> to https://api.mailjet.com/v3.1/send with {"FromEmail"=>"diane-bunod-92@hotmail.fr", "FromName"=>"Diane", "Subject"=>"Hello", "Text-part"=>"Hi, how are you ?", "Recipients"=>[{"email"=>"d.bunod@gmail.com"}]}
+
+"{\"Errors\":[{\"ErrorIdentifier\":\"aee80ee3-db5b-490b-baa6-ad5f2a45abe2\",\"ErrorCode\":\"mj-0003\",\"StatusCode\":400,\"ErrorMessage\":\"Missing mandatory property.\",\"ErrorRelatedTo\":[\"Messages\"]},{\"ErrorIdentifier\":\"eb9c0c6b-d81a-421d-9478-e2bf512d3a7e\",\"ErrorCode\":\"send-0001\",\"StatusCode\":400,\"ErrorMessage\":\"Not a valid property.\",\"ErrorRelatedTo\":[\"FromName\",\"Subject\",\"Text-part\",\"Recipients\",\"FromEmail\"]}],\"Messages\":[]}"
+
+Please see https://dev.mailjet.com/guides/#status-codes for more informations on error numbers.
+
+):
+  
+app/mailers/newsletter_mailer.rb:11:in `send'
+app/controllers/user_controller.rb:10:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20180809213046)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180809213046_create_messages.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180809213046_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180809213046"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
